@@ -1,0 +1,133 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+        .login{
+            width: 280px;
+            padding: 5px 50px;
+            background: #fff;
+            margin: 10px 0;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+        }
+            .logo{
+                height: 150px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .logo img{
+                    height: 150px;
+                }
+            .sign-in{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+                .div{
+                    height: 40px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 0 10px 0;
+                }
+                .div:first-child p{
+                    font-size: 16px;
+                    color: gray;
+                    text-align: center;
+                    font-weight:600;
+                    margin: 0;
+                }
+                .div:nth-child(2) p{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+                .div:nth-child(2) i{
+                    font-size: 15px;
+                    margin: 0 10px;
+                }
+                button{
+                    width: 100%;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    color: white;
+                    background: #5297ff;
+                    justify-self: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .div:nth-child(3) p{
+                    margin: 0;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 40px;
+                    color: gray;
+                }
+                .c{
+                    height: 2px;
+                    width: 115px;
+                }
+                hr{
+                    border:1px solid gray;
+                    margin-top: 19px;
+                }
+                input{
+                    height: 100%;
+                    width: 100%;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    font-size: 12px;
+                    border-radius: 3px;
+                }
+                .div.div:nth-child(8) p{
+                    text-align: center;
+                    font-size: 12px;
+                    color: gray;
+                }
+                .div.div:nth-child(9) p{
+                    text-align: center;
+                    font-size: 12px;
+                    color: gray;
+                }
+                a{
+                    color: rgb(69, 69, 167);
+                    text-decoration: none;
+                }
+
+
+
+        .redirect{
+            height: 60px;
+            width: 280px;
+            padding: 0 50px;
+            background: #fff;
+            border: 1px solid lightgray;
+            text-align: center;
+        }
+        .redirect p{
+            line-height: 60px;
+            margin: 0;
+            font-size: 14px;
+        }
+        i{
+            text-decoration: none;
+        }

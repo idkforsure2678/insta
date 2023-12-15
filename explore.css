@@ -1,0 +1,326 @@
+*{
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    min-width: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    .nav{
+        height: 100%;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid lightgray;
+        position: fixed;
+    }
+        .nav-container{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 95%;
+        }
+            .title-container{
+                height: 100px;
+                width: 100%;
+            }
+                .title-container img{
+                    height: 100px;
+                    width: 80%;
+                }
+            .nav-items{
+                height: 100%;
+                width: 100%;
+            }
+                .navigation{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 0;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                }
+                    .nav-list{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        cursor: pointer;
+                        transition: all linear;
+                    }
+                    .nav-list:hover{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        cursor: pointer;
+                        background-color: rgb(236, 236, 236);
+                        border-radius: 7px;
+                    }
+                        .nav-list i{
+                            font-size: 23px;
+                            line-height: 50px;
+                            margin: 0 10px;
+                            cursor: pointer;
+                            height: 50px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                        .profile-nav{
+                            height: 50px;
+                            width: 50px;
+                            margin: 0 10px;
+                            cursor:pointer;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                            .profile-nav img{
+                            height: 30px;
+                            width: 30px;
+                            background-size: cover;
+                            cursor:pointer;
+                            border-radius: 50%;
+                            border: 2px solid black;
+                            }
+    .main{
+        width: 80%;
+        float: right;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+    }
+        .explore-section{
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+            .section{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+                .img-section{
+                    height: 50%;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                    .img-section img{
+                        height: 98%;
+                        width: 98%;
+                        background-size: cover;
+                        position: relative;
+                        top: -294px;
+                    }
+                        .hover-section{
+                            width: 98%;
+                            height: 98%;
+                            cursor: pointer;
+                            transition: all linear 0.5s;
+                            position: relative;
+                            z-index: 10;
+                            opacity: 0;
+                           }
+                               .hover-section:hover{
+                                width: 98%;
+                                height: 98%;
+                                cursor: pointer;
+                                transition: all linear 0.3s;
+                                position: relative;
+                                display: block;
+                                opacity: 1;
+                                z-index: 10;
+                                background-color: rgba(0, 0, 0, 0.369);
+                               }
+                                .explore-img-status{
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                                    .img-status{
+                                        height: 100%;
+                                        width: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: white;
+                                    }
+                                        .img-status span{
+                                            margin: 0 20px;
+                                        }
+                .height-img-section{
+                    height: 100%;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                    .height-img-section img{
+                        height: 99%;
+                        width: 98%;
+                        background-size: cover;
+                        position: relative;
+                        top: -594px;
+                    }
+                        .height-hover-section{
+                            width: 98%;
+                            height: 99%;
+                            cursor: pointer;
+                            transition: all linear 0.5s;
+                            position: relative;
+                            z-index: 10;
+                            opacity: 0;
+                           }
+                               .height-hover-section:hover{
+                                width: 98%;
+                                height: 99%;
+                                cursor: pointer;
+                                transition: all linear 0.3s;
+                                position: relative;
+                                display: block;
+                                opacity: 1;
+                                z-index: 10;
+                                background-color: rgba(0, 0, 0, 0.369);
+                               }
+                                .height-explore-img-status{
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                                    .height-img-status{
+                                        height: 100%;
+                                        width: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: white;
+                                    }
+                                        .height-img-status span{
+                                            margin: 0 20px;
+                                        }
+
+
+.more{
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(179, 179, 179);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: 90px;
+    left: 30px;
+    position: fixed;
+    background-color: #fff;
+    transition: all linear 0.3s;
+}
+    .more p{
+        margin: 0;
+    }
+    .more i{
+        margin: 0 10px 0 0;
+        line-height: 40px;
+    }
+        .sect-1{
+            display: flex;
+            flex-direction: column;
+            height: 55%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            text-align: left;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            .sect-1a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-1a:hover{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-2{
+            height: 14%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-2a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-2a:hover{
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-3{
+            height: 14%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-3 p{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-3 p:hover{
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-4{
+            height: 14%;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-4 p{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-4 p:hover{
+                background-color: rgb(228, 228, 228);
+            }

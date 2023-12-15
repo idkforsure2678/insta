@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <script src="intragram.js"></script>
+    <script src="https://kit.fontawesome.com/f2ba1724e3.js" crossorigin="anonymous"></script>
+    <title>intragram</title>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="nav-container">
+                <div class="title-container">
+                    <img src="download1.png" alt="">
+                </div>
+                <div class="nav-items">
+                    <ul class="navigation">
+                        <a href="intragram.html">
+                            <li class="nav-list">
+                                <i class="fa-solid fa-house">
+                                </i>
+                                <p>
+                                    Home
+                                </p>
+                            </li>
+                        </a>
+                        <li class="nav-list">
+                            <i class="fa-solid fa-magnifying-glass">
+                            </i>
+                        
+                            <p>
+                                Search
+                            </p>
+                        </li>
+                        <a href="explore.html">
+                            <li class="nav-list">
+                                <i class="fa-solid fa-compass">
+                                </i>
+                                
+                                <p>
+                                    Explore
+                                </p>
+                            </li>
+                        </a>
+                        <li class="nav-list">
+                            <i class="fa-solid fa-film">
+                            </i>
+                            
+                            <p>
+                                Reels
+                            </p>
+                        </li>
+                        <li class="nav-list">
+                            <i class="fa-solid fa-paper-plane">
+                            </i>
+                            
+                            <p>
+                                Messages
+                            </p>
+                        </li>
+                        <li class="nav-list">
+                            <i class="fa-solid fa-heart">
+                            </i>
+                            
+                            <p>
+                                Notifications
+                            </p>
+                        </li>
+                        <li class="nav-list">
+                            <i class="fa-solid fa-table-cells-large">
+                            </i>
+                            
+                            <p>
+                                Create
+                            </p>
+                        </li>
+                        <a href="profile.html">
+                            <li class="nav-list">
+                                <div class="profile-side-nav">
+                                    <img src="406670614_1404559310164420_604994243047972533_n.jpg" alt="">
+                                </div>
+                                <p style="font-weight: bold;">
+                                    Profile
+                                </p>
+                            </li>
+                        </a>
+                        <li onclick="showMore()" class="nav-list">
+                            <i class="fa-solid fa-bars">
+                            </i>
+                            
+                            <p>
+                                More
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main">
+            <div class="profile-container">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="406670614_1404559310164420_604994243047972533_n.jpg" alt="">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-status">
+                            <P>
+                                Cherry_
+                            </P>
+                            <div class="status-btn">
+                                <button>Edit Profile</button>
+                                <button>View Archive</button>
+                            </div>
+                            <i class="fa-solid fa-cog"></i>
+                        </div>
+                        <div class="profile-status">
+                            ""
+                        </div>
+                        <div class="profile-status">
+                            <div class="status">
+                                <span>
+                                    0
+                                </span>
+                                <p>
+                                    posts
+                                </p>
+                            </div>
+                            <div class="status">
+                                <span>
+                                    0
+                                </span>
+                                <p>
+                                    followers
+                                </p>
+                            </div>
+                            <div class="status">
+                                <span>
+                                    0
+                                </span>
+                                <p>
+                                    following
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-status">
+                            <p>
+                                Cherry Joy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-nav">
+                    <a href="profile.html">
+                        <div class="profile-nav-btn">
+                            <i class="fa-sharp fa-solid fa-table-cells"></i>
+                            <p>
+                                POSTS
+                            </p>
+                        </div>
+                    </a>
+                    <a href="profile-saved.html">
+                        <div class="profile-nav-btn">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <p>
+                                SAVED
+                            </p>
+                        </div>
+                    </a>
+                    <a href="profile-tag.html">
+                        <div class="profile-nav-btn"  style="border-top: 2px solid;">
+                            <i class="fa-solid fa-user-tag"></i>
+                            <p>
+                                TAGGED
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="saved-container">
+                    <div class="logo">
+                        <i class="fa-solid fa-user-tag"></i>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Photos of you
+                        </p>
+                    </div>
+                    <div class="text2">
+                        <p>
+                            When people tag you in photos, they'll appear here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="more" class="more" style="display: none;">
+        <div class="sect-1">
+            <div class="sect-1a">
+                <i class="fa-solid fa-gear"></i>
+                <p>
+                    setting
+                </p>
+            </div>
+            <div class="sect-1a">
+                <i class="fa-sharp fa-solid fa-chart-line"></i>
+                <p>
+                   Your Activity
+                </p>
+            </div>
+            <div class="sect-1a">
+                <i class="fa-regular fa-bookmark"></i>
+                <p>
+                    Saved
+                </p>
+            </div>
+            <div class="sect-1a">
+                <i class="fa-regular fa-sun"></i>
+                <p>
+                    Switch Appearance
+                </p>
+            </div>
+            <div class="sect-1a">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>
+                    Report a problem
+                </p>
+            </div>
+        </div>
+        <div class="sect-2">
+            <div class="sect-2a">
+                <i class="fa-brands fa-threads"></i>
+                <p>
+                    Threads
+                </p>
+            </div>
+        </div>
+        <div class="sect-3">
+            <p>
+                Switch Account
+            </p>
+        </div>
+        <div onclick="logOut()" class="sect-4">
+            <p>
+                Log out
+            </p>
+        </div>
+    </div>   
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        let logged = localStorage.getItem('logged');
+
+        if(logged != 'true'){
+            window.location.href = "login.html";
+        }
+
+    })
+</script>
+</html>

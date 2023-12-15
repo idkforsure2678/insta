@@ -1,0 +1,426 @@
+*{
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    min-width: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    .nav{
+        height: 100%;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid lightgray;
+        position: fixed;
+    }
+        .nav-container{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 95%;
+        }
+            .title-container{
+                height: 100px;
+                width: 100%;
+            }
+                .title-container img{
+                    height: 100px;
+                    width: 80%;
+                }
+            .nav-items{
+                height: 100%;
+                width: 100%;
+            }
+                .navigation{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 0;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                }
+                    .nav-list{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        cursor: pointer;
+                        transition: all linear;
+                    }
+                    .nav-list:hover{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        cursor: pointer;
+                        background-color: rgb(236, 236, 236);
+                        border-radius: 7px;
+                    }
+                        .nav-list i{
+                            font-size: 23px;
+                            line-height: 50px;
+                            margin: 0 10px;
+                            cursor: pointer;
+                            height: 50px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                        .profile-side-nav{
+                            height: 50px;
+                            width: 50px;
+                            margin: 0 10px;
+                            cursor:pointer;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                            .profile-side-nav img{
+                            height: 30px;
+                            width: 30px;
+                            background-size: cover;
+                            cursor:pointer;
+                            border-radius: 50%;
+                            border: 2px solid black;
+                            }
+    .main{
+        width: 80%;
+        float: right;
+    }
+        .profile-container{
+            width: 80%;
+            background: #fff;
+            margin: auto;
+            padding: 30px 20px;
+        }
+            .profile{
+                height: 150px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border-bottom: 2px solid lightgray;
+                padding-bottom: 40px;
+            }
+                .profile-img{
+                    height: 100%;
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .profile-img img{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        background-size: cover;
+                    }
+                .profile-info{
+                    height: 100%;
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .profile-status{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                        .profile-status:first-child{
+                            height: 40px;
+                        }
+                            .profile-status:first-child p{
+                                margin: 0;
+                                line-height: 40px;
+                                font-size: 20px;
+                                width: 90px;
+                                cursor: pointer;
+                            }
+                            .profile-status:first-child button{
+                                line-height: 40px;
+                                padding: 0 10px;
+                                margin: 0 5px;
+                                outline: none;
+                                border: none;
+                                border-radius: 5px;
+                                height: 35px;
+                                top: 2.5px;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            .profile-status:first-child i{
+                                margin: auto;
+                                line-height: 40px;
+                                font-size: 24px;
+                                width: 40px;
+                                height: 40px;
+                                cursor: pointer;
+                            }
+                        .profile-status:nth-child(2){
+                            height: 20px;
+                            visibility: hidden;
+                        }
+                        .profile-status:nth-child(3){
+                            height: 40px;
+                            display: flex;
+                            flex-direction: row;
+                        }
+                            .status{
+                                width: 100px;
+                                line-height: 40px;
+                                display: flex;
+                            }
+                                .status span{
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                }
+                                .status p{
+                                    margin: 0 0 0 10px;
+                                    cursor: pointer;
+                                }
+                        .profile-status:last-child p{
+                            margin: 0;
+                            font-size: 13px;
+                            font-weight: bold;
+                        }
+            .profile-nav{
+                height: 50px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                .profile-nav-btn{
+                    height: 100%;
+                    display: flex;
+                    margin: 0 20px;
+                    text-align: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+                    .profile-nav-btn p{
+                        margin: 0;
+                        line-height: 50px;
+                        width: initial;
+                        font-size: 15px;
+                        color: grey;
+                    }
+                    .profile-nav-btn i{
+                        line-height: 50px;
+                        margin: 0 10px 0 0;
+                        font-size: 13px;
+                        color: grey;
+                    }
+            .profile-posts{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+            }
+                .post{
+                    height: 284px;
+                    width: 100%;
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+                    .profile-posts img{
+                        width: 100%;
+                        background-size: cover;
+                        position: relative;
+                        top: -284px;
+                    }
+                        .hover-section{
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            z-index: 10;
+                            position: relative;
+                            transition: all linear;
+                        }
+                            .hover-section:hover{
+                                position: relative;
+                                display: block;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 1;
+                                background-color: rgba(0, 0, 0, 0.311);
+                                color: #fff;
+                                z-index: 10;
+                                cursor: pointer;
+                            }
+                                .post-img-status{
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                    .img-status{
+                                        display: flex;
+                                        flex-direction: row;
+                                        height: 20px;
+                                    }
+                                        .img-status i{
+                                            margin: 0 10px;
+                                            line-height: 20px;
+                                        }
+            .saved-container{
+                height: 186px;
+                width: 40%;
+                margin: 50px auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .saved-container p{
+                margin: 0;
+            }
+                .logo{
+                    height: 62px;
+                    width: 62px;
+                    text-align: center;
+                    margin: auto;
+                    border-radius: 50%;
+                    border: 2px solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .logo i{
+                        font-size: 30px;
+                    }
+                .text{
+                    font-size: 30px;
+                    font-weight: 900;
+                }
+                .text2{
+                    font-size: 15px;
+                }
+
+
+
+.more{
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(179, 179, 179);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: 90px;
+    left: 30px;
+    position: fixed;
+    background-color: #fff;
+    transition: all linear 0.3s;
+}
+    .more p{
+        margin: 0;
+    }
+    .more i{
+        margin: 0 10px 0 0;
+        line-height: 40px;
+    }
+        .sect-1{
+            display: flex;
+            flex-direction: column;
+            height: 55%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            text-align: left;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            .sect-1a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-1a:hover{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-2{
+            height: 14%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-2a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-2a:hover{
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-3{
+            height: 14%;
+            border-bottom: 3px solid rgb(216, 216, 216);
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-3 p{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-3 p:hover{
+                background-color: rgb(228, 228, 228);
+            }
+        .sect-4{
+            height: 14%;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+            .sect-4 p{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                height: 40px;
+                width: 70%;
+                line-height: 40px;
+                padding: 0 30px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .sect-4 p:hover{
+                background-color: rgb(228, 228, 228);
+            }
+
+          
